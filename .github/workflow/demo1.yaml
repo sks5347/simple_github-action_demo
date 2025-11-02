@@ -7,11 +7,11 @@ on:
     branches: [main] #we can mention multiple branches
 
 #step 3: JOB, this tell us once the even is triggred where to run the job
-job:
+jobs:
   demo:
      runs-on: ubuntu-latest # what or which server should be spinned up by github to run the job
 
      # step4: each job should have the STEP, what need to be executed
-     step:
+     steps:
        - name: Greetings
          run: echo "Hello World" # shell script that needs ro be executed
